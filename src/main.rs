@@ -1,5 +1,11 @@
 use leptos::prelude::*;
 
 fn main() {
-    leptos::mount::mount_to_body(|| view! { <p>"Hello, world!"</p> })
+    leptos::mount::mount_to_body(|| {
+        view! {
+            <div class="flex w-screen h-screen bg-black">
+                <p class="text-white">"Hello, world!"</p>
+            </div>
+        }
+    })
 }
